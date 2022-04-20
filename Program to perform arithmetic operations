@@ -1,0 +1,36 @@
+"""
+Design a simple calculator using functions
+Show a menu of operations using looping statements
+"""
+
+def add(num_1,num_2):
+    return num_1 + num_2
+def subract(num_1,num_2):
+    return num_1 - num_2
+def multiply(num_1,num_2):
+    return num_1 * num_2
+def divide(num_1,num_2):
+    return num_1 / num_2
+
+print("Enter the choice : ")
+print("1.Add")
+print("2.Subract")
+print("3.multiply") 
+print("4.divide")
+
+choice = int(input("Enter the choice (1/2/3/4) : "))
+
+value1 = int(input("Enter the value of num1 : "))
+value2 = int(input("Enter the value of num2 : "))
+
+if choice == 1:
+    print(value1 ,"+", value2 ,"=", add(value1,value2))
+elif choice == 2:
+    print(value1 ,"-", value2 ,"=", subract(value1, value2))
+elif choice == 3:
+    print(value1 ,"*", value2 ,"=", multiply(value1, value2))
+elif choice == 4:
+    print(value1 ,"/", value2 ,"=", divide(value1, value2))
+else:
+    print("You have entered Invalid input")
+    
